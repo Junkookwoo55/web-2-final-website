@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews - Ice Cream Heaven</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        header, footer {
+            background-color: #008080;
+            color: #FFFFFF;
+            padding: 10px 20px;
+            text-align: center;
+            width: 100%; /* Ensure header and footer stretch full width */
+        }
+        main {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .review-chatbox {
+            width: 22%;
+            height: auto; /* Adjust height for flexibility based on content */
+            margin: 10px;
+            padding: 10px;
+            background-color: #ffccf9;
+            color: #333;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+        }
+        footer {
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .footer-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .footer-section {
+            flex: 1;
+            min-width: 200px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo"><img src="logo.png" alt="Ice Cream Heaven Logo"></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="catering.html">Catering</a></li>
+            <li><a href="reviews.html" class="active">Reviews</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="review-chatbox"><h4>Emily R.</h4><p>"Incredible flavors and great service! The salted caramel and pistachio were absolute winners for our family gathering. Everyone was asking where we got it!"</p></div>
+    <div class="review-chatbox"><h4>Mark T.</h4><p>"Absolutely love the cozy atmosphere and the rich coffee ice cream. Perfect for weekend getaways and a must-try for coffee lovers!"</p></div>
+    <div class="review-chatbox"><h4>Sarah K.</h4><p>"Their vegan options are top-notch! The vegan chocolate is creamy and rich, and you wouldn't even know it's dairy-free. A great spot for those with dietary restrictions."</p></div>
+    <div class="review-chatbox"><h4>Joe D.</h4><p>"Quick service and delicious ice cream. The kids love the variety of toppings and the fun, colorful seating outside. We're regulars now!"</p></div>
+    <div class="review-chatbox"><h4>Lisa M.</h4><p>"Great location, great service! It's always a treat to visit after a day out in the city. The mango sorbet is refreshing and sweet, perfect for summer days."</p></div>
+    <div class="review-chatbox"><h4>Tom B.</h4><p>"They always have new flavors to try, which keeps us coming back. Last time, the apple pie flavor was a delightful surprise with real apple pieces and cinnamon."</p></div>
+    <div class="review-chatbox"><h4>Nina P.</h4><p>"Love the family-friendly environment and the playful presentation of each serving. The bubblegum ice cream was a hit with my kids, and the edible glitter made their day!"</p></div>
+    <div class="review-chatbox"><h4>Chris J.</h4><p>"The seasonal flavors are amazing! I especially enjoyed the pumpkin spice last fall. It's like they've captured the essence of autumn in a scoop."</p></div>
+</main>
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Need more information?</h3>
+            <p>Write your concern to us and our wonderful team will get back to you.</p>
+        </div>
+        <div class="footer-section">
+            <img src="logo.png" alt="The Scoop Logo">
+            <p>Get the Scoop! Find Us: 123 Sundae Lane, Flavor Town, Yum State, 12345</p>
+            <p>Talk to Us: (123) 456-7890</p>
+        </div>
+        <div class="footer-section">
+            <h3>Our Hours</h3>
+            <p>Sun-Thurs: 11am - 10pm, Fri-Sat: 11am - 11pm</p>
+        </div>
+        <div class="footer-section">
+            <h3>Connect with us</h3>
+            <div class="container">
+                <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

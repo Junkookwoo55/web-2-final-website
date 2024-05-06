@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Heaven</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous">
+    <style>
+        .feature-item {
+            cursor: pointer;
+            transition: transform 0.5s;
+        }
+        .feature-item:hover {
+            animation: shake 0.5s;
+            animation-iteration-count: infinite;
+        }
+        .features a {
+            text-decoration: none; /* Remove underline */
+            color: #333; /* Change text color */
+        }
+        @keyframes shake {
+            0% { transform: translate(1px, 1px) rotate(0deg); }
+            10% { transform: translate(-1px, -2px) rotate(-1deg); }
+            20% { transform: translate(-3px, 0px) rotate(1deg); }
+            30% { transform: translate(3px, 2px) rotate(0deg); }
+            40% { transform: translate(1px, -1px) rotate(1deg); }
+            50% { transform: translate(-1px, 2px) rotate(-1deg); }
+            60% { transform: translate(-3px, 1px) rotate(0deg); }
+            70% { transform: translate(3px, 1px) rotate(-1deg); }
+            80% { transform: translate(-1px, -1px) rotate(1deg); }
+            90% { transform: translate(1px, 2px) rotate(0deg); }
+            100% { transform: translate(1px, -2px) rotate(-1deg); }
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var flavorFeature = document.querySelector('.feature-item:nth-child(1)');
+            var cateringFeature = document.querySelector('.feature-item:nth-child(2)');
+            var sustainabilityFeature = document.querySelector('.feature-item:nth-child(3)');
+            
+            flavorFeature.addEventListener('click', function() {
+                window.location.href = 'menu.html';
+            });
+            cateringFeature.addEventListener('click', function() {
+                window.location.href = 'catering.html';
+            });
+            sustainabilityFeature.addEventListener('click', function() {
+                window.location.href = 'sustainability.html';
+            });
+        });
+    </script>
+</head>
+<body class="home-page">
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo"><img src="logo.png" alt="Ice Cream Heaven Logo"></a>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="catering.html">Catering</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="about.html">About Us</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-section">
+            <h1>Your Joy in Every Cone & Cup</h1>
+            <p>From the first creamy taste to the last delightful scoop, our ice cream is a symphony of flavors that promises pure bliss. Handcrafted with love, our cones and cups are filled with joy and sprinkled with sweet memories.</p>
+            <div class="features">
+                <div class="feature-item">
+                    <img src="mint-chocolate.jpg" alt="Mint Chocolate">
+                    <h3>Discover Our Flavors</h3>
+                    <p>Explore a treasure trove of creamy delights, from classic vanilla to exotic dragon fruit sorbet.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="coffee-bean.jpg" alt="Coffee Bean">
+                    <h3>Catering Services</h3>
+                    <p>Make your next event unforgettable with our custom ice cream catering - perfect for parties, corporate events, and weddings.</p>
+                </div>
+                <div class="feature-item">
+                    <a href="about.html">
+                        <img src="eco-friendly.jpg" alt="Eco-Friendly">
+                        <h3>Our Story</h3>
+                        <p>We're committed to sustainability, using eco-friendly packaging and locally sourced ingredients.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Need more information?</h3>
+                <p>Write your concern to us and our wonderful team will get back to you.</p>
+            </div>
+            <div class="footer-section">
+                <img src="logo.png" alt="The Scoop Logo">
+                <p>Get the Scoop! Find Us: 123 Sundae Lane, Flavor Town, Yum State, 12345</p>
+                <p>Talk to Us: (123) 456-7890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Our Hours</h3>
+                <p>Sun-Thurs: 11am - 10pm, Fri-Sat: 11am - 11pm</p>
+            </div>
+            <div class="footer-section">
+                <h3>Connect with us</h3>
+                <div class="container">
+                    <span><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></span>
+                    <span><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></span>
+                    <span><a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a></span>
+                    <span><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Ice Cream Heaven</title>
+    <style>
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #FDEEDC;
+            color: #5D4037;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #87CEEB;
+            padding: 1em 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10%;
+        }
+
+        .navbar .logo img {
+            height: auto;
+            width: 70px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            padding: 0 20px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #FFFFFF;
+            font-weight: bold;
+        }
+
+        .navbar a:hover, .navbar a.active {
+            color: #FFD700;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+        }
+
+        .menu-item {
+            background-color: #FFFFFF;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.1);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #008080;
+            padding: 20px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        @media (max-width: 768px) {
+            .menu-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo"><img src="logo.png" alt="Ice Cream Heaven Logo"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="catering.html">Catering</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="menu" class="menu-section">
+            <h1>Our Delicious Flavors</h1>
+            <div class="menu-grid">
+                <!-- 15 Flavor Items -->
+                <div class="menu-item"><img src="vanilla.jpg" alt="Vanilla"><h3>Vanilla</h3><p>Classic creamy vanilla ice cream made from real vanilla beans.</p></div>
+                <div class="menu-item"><img src="chocolate.jpg" alt="Chocolate"><h3>Chocolate</h3><p>Rich and smooth chocolate ice cream.</p></div>
+                <div class="menu-item"><img src="strawberry.jpg" alt="Strawberry"><h3>Strawberry</h3><p>Fresh and fruity strawberry ice cream.</p></div>
+                <div class="menu-item"><img src="mint.jpg" alt="Mint Chocolate Chip"><h3>Mint Chocolate Chip</h3><p>Refreshing mint ice cream with chocolate chips.</p></div>
+                <div class="menu-item"><img src="cookie dough.jpg" alt="Cookie Dough"><h3>Cookie Dough</h3><p>Sweet ice cream with chunks of cookie dough and chocolate pieces.</p></div>
+                <div class="menu-item"><img src="caramel.jpg" alt="Salted Caramel"><h3>Salted Caramel</h3><p>Rich ice cream with a sweet and salty caramel swirl.</p></div>
+                <div class="menu-item"><img src="pistachio.jpg" alt="Pistachio"><h3>Pistachio</h3><p>Nutty pistachio flavored ice cream.</p></div>
+                <div class="menu-item"><img src="lemon sorbet.jpg" alt="Lemon Sorbet"><h3>Lemon Sorbet</h3><p>Light and refreshing lemon sorbet.</p></div>
+                <div class="menu-item"><img src="mango.jpg" alt="Mango"><h3>Mango</h3><p>Tropical mango ice cream with real mango pieces.</p></div>
+                <div class="menu-item"><img src="coffee.jpg" alt="Coffee"><h3>Coffee</h3><p>Bold coffee ice cream for a rich flavor experience.</p></div>
+                <div class="menu-item"><img src="rocky.png" alt="Rocky Road"><h3>Rocky Road</h3><p>Hard Rock Road.</p></div>
+                <div class="menu-item"><img src="cinnamon.jpg" alt="Cinnamon"><h3>Cinnamon</h3><p>Spicy cinnamon ice cream that's perfect for autumn.</p></div>
+                <div class="menu-item"><img src="almond.jpg" alt="Almond"><h3>Almond</h3><p>Smooth ice cream with crunchy almonds.</p></div>
+                <div class="menu-item"><img src="peach.jpg" alt="Peach"><h3>Peach</h3><p>Summer peach ice cream with chunks of real peach.</p></div>
+                <div class="menu-item"><img src="raspberry.jpg" alt="Raspberry"><h3>Raspberry</h3><p>Bright and bold raspberry ice cream with a tangy kick.</p></div>
+            </div>
+        </section>
+    </main>
+   
+</body>
+</html>

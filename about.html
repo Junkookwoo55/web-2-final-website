@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Ice Cream Heaven</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+        }
+        header, footer {
+            background-color: #008080;
+            color: #FFFFFF;
+            padding: 10px 20px;
+            text-align: center;
+            font-family: 'Helvetica', sans-serif;
+            width: 100%; 
+        }
+        main {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .about-section {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        .text-box, .image-box {
+            flex: 1;
+            padding: 20px;
+        }
+        .text-box {
+            order: 2;
+        }
+        .image-box img {
+            width: 50%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+        .about-section:nth-child(even) .text-box {
+            order: 1;
+        }
+        .about-section:nth-child(even) .image-box {
+            order: 2;
+        }
+        h1, h2, h3 {
+            font-family: 'Georgia', serif;
+            color: #333;
+        }
+        h1 {
+            font-size: 42px;
+            text-shadow: 1px 1px 2px #888;
+        }
+        h2 {
+            font-size: 32px;
+            text-shadow: 1px 1px 1px #888;
+        }
+        p {
+            font-size: 20px;
+            line-height: 1.6;
+            color: #666;
+        }
+        footer {
+            background-color: #008080;
+            color: #FFFFFF;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 100%;
+        }
+        .footer-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .footer-section {
+            flex: 1;
+            min-width: 200px;
+            padding: 0 15px;
+            text-align: left;
+        }
+        .social-media-icons a {
+            color: #FFFFFF;
+            font-size: 24px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo"><img src="logo.png" alt="Ice Cream Heaven Logo"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="catering.html">Catering</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="about-intro about-section">
+            <div class="text-box">
+                <h1>Welcome to Ice Cream Heaven!</h1>
+                <p>Discover the joy of ice cream crafted with passion and perfection. Join us on a delightful journey through flavors that make life a little sweeter. Explore our wide range of traditional and exotic flavors, each created with care and the finest ingredients. Our dedication to quality ensures that every scoop is a treat to your taste buds.</p>
+            </div>
+            <div class="image-box">
+                <img src="intro.jpg" alt="Delicious Ice Cream">
+            </div>
+        </section>
+        <section class="about-story about-section">
+            <div class="text-box">
+                <h2>Our Story</h2>
+                <p>Ice Cream Heaven started with a dream to make artisanal ice cream accessible to everyone. From humble beginnings in a small town shop to a beloved chain, we've always stayed true to our roots: exceptional quality, unique flavors, and a commitment to community happiness. Our journey is one of passion, dedication, and continuous innovation in the ice cream craft.</p>
+            </div>
+            <div class="image-box">
+                <img src="our-story.jpg" alt="Our Ice Cream Shop">
+            </div>
+        </section>
+        <section class="about-mission about-section">
+            <div class="text-box">
+                <h2>Our Mission</h2>
+                <p>At Ice Cream Heaven, our mission is to provide not just ice cream, but an experience that brings people together. Every scoop is a promise of quality, crafted with ingredients sourced from the best local farms. We strive to innovate while respecting traditional methods, ensuring every visit is memorable. Our commitment to sustainability and community support is at the heart of everything we do. By fostering a positive culture and engaging with local communities, we aim to be more than just an ice cream shop—we're a place where memories are made and shared.</p>
+            </div>
+            <div class="image-box">
+                <img src="mission.jpg" alt="Ice Cream Crafting">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Need More Information?</h3>
+                <p>Contact us and our team will get back to you as soon as we can!</p>
+            </div>
+            <div class="footer-section">
+                <img src="logo.png" alt="The Scoop Logo">
+                <p>Visit us at 123 Sundae Lane, Flavor Town, Yum State, 12345. Talk to Us: (123) 456-7890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Our Hours</h3>
+                <p>Sun-Thurs: 11am - 10pm, Fri-Sat: 11am - 11pm</p>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-media-icons">
+                    <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

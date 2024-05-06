@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catering Services - Ice Cream Heaven</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff; /* light blue background */
+        }
+        header {
+            background-color: #008080;
+            color: #FFFFFF;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav.navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav.navbar ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav.navbar ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav.navbar ul li a {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        nav.navbar a.logo img {
+            height: 50px; /* Logo size */
+        }
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        form {
+            width: 80%;
+            max-width: 500px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #008080; /* Teal background */
+            color: #FFFFFF;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #004d4d; /* Darker teal */
+        }
+        footer {
+            background-color: #008080;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 10px 20px;
+        }
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .footer-section {
+            flex: 1;
+            min-width: 200px;
+        }
+        .footer-section h3 {
+            color: #FFD700;
+        }
+        .footer-section p, .footer-section a {
+            color: #FFFFFF;
+        }
+        .footer-section img {
+            width: 100px;
+            margin-bottom: 10px;
+        }
+        .container span a {
+            color: #FFFFFF;
+            font-size: 24px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo"><img src="logo.png" alt="Ice Cream Heaven Logo"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="catering.html" class="active">Catering</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="submit-catering.php" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="event-date">Event Date:</label>
+                <input type="date" id="event-date" name="event-date" required>
+            </div>
+            <div class="form-group">
+                <label for="number-of-guests">Number of Guests:</label>
+                <input type="number" id="number-of-guests" name="number-of-guests" required>
+            </div>
+            <div class="form-group">
+                <label for="details">Additional Details:</label>
+                <textarea id="details" name="details"></textarea>
+            </div>
+            <button type="submit">Submit Request</button>
+        </form>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Need more information?</h3>
+                <p>Write your concern to us and our wonderful team will get back to you.</p>
+            </div>
+            <div class="footer-section">
+                <img src="logo.png" alt="The Scoop Logo">
+                <p>Get the Scoop! Find Us: 123 Sundae Lane, Flavor Town, Yum State, 12345</p>
+                <p>Talk to Us: (123) 456-7890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Our Hours</h3>
+                <p>Sun-Thurs: 11am - 10pm, Fri-Sat: 11am - 11pm</p>
+            </div>
+            <div class="footer-section">
+                <h3>Connect with us</h3>
+                <div class="container">
+                    <span><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></span>
+                    <span><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></span>
+                    <span><a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a></span>
+                    <span><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
